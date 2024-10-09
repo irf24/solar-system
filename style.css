@@ -3,8 +3,8 @@ body {
   overflow: hidden;
 }
 canvas {
-  width: "100vh";
-  height: "100vw";
+  height: 100vh;
+  width: 100vw;
 }
 
 #title {
@@ -26,4 +26,51 @@ canvas {
 }
 #controls div {
   padding: 2px;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 10;
+  color: white;
+}
+
+#loading {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+.bar-container {
+  display: flex;
+  padding: 40px;
+}
+
+.bar {
+  width: 4px;
+  height: 20px;
+  border-radius: 1px;
+  margin: 4px;
+  background-color: aliceblue;
+  animation: grow 1s alternate-reverse infinite;
+}
+
+.bar:nth-child(even) {
+  animation-delay: 1s;
+}
+
+@keyframes grow {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(2);
+  }
 }

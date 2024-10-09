@@ -442,3 +442,6 @@ window.addEventListener("resize", () => {
 });
 
 renderLoop();
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+});
