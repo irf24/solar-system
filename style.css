@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+canvas {
+  width: "100vh";
+  height: "100vw";
+}
+
+#title {
+  color: white;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+#controls {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#controls div {
+  padding: 2px;
+}
