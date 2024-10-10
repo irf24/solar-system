@@ -420,7 +420,7 @@ function renderLoop() {
       (Math.cos(planet.mesh.rotation.y) * planet.distanceFromSun) / 6000000;
     if (planet.moons) {
       planet.moons.map((moon) => {
-        moon.mesh.rotation.y += moon.orbitalSpeed / 1000;
+        moon.mesh.rotation.y += moon.orbitalSpeed / 500;
         moon.mesh.position.x =
           (Math.sin(moon.mesh.rotation.y) * moon.distanceFromPlanet) / 200000;
         moon.mesh.position.z =
