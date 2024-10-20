@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Solar System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="loader">
@@ -17,13 +23,18 @@
         <div class="bar"></div>
       </div>
     </div>
-    <canvas id="box"></canvas>
-    <div id="title">The Solar System</div>
-    <div id="controls">
-      <div>RightClick + Move to rotate</div>
-      <div>Sroll to Zoom In and Zoom Out</div>
-      <div>CLTR + RightClick + Move to move the system</div>
+    <div class="title">
+      <div>The Solar System</div>
     </div>
+    <div class="controls desktop-controls">
+      <div>Right-click + Move to rotate</div>
+      <div>Sroll to Zoom In and Zoom Out</div>
+      <div>CLTR + Right-click + Move to move the system</div>
+    </div>
+    <div class="controls mobile-controls">
+      <div>Use touch controls to Intract</div>
+    </div>
+    <canvas id="box"></canvas>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
